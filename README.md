@@ -137,7 +137,7 @@ python manage.py shell
 
 Now import the question and choice models we made in the DB. Refer to "Create the database" above if you forgot.
 ```
-from polls.modles import Question,Choice
+from polls.models import Question,Choice
 ```
 Now we can make queries.  For instance, with the quesiton model...
 ```
@@ -145,9 +145,9 @@ Question.objects.all()  // Enter
 ```
 In this project we need to import the timezone module since we're using a publication date
 ```
-fron django.utils import timezone
+from django.utils import timezone
 ```
 Next, we'll setup the questions
 ```
-q = Question(question_text='What is your favorite cookie?', pub_date=)
+q = Question(question_text='What is your favorite cookie?', pub_date=timezone.now())
 ```
