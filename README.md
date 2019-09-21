@@ -55,3 +55,10 @@ There will likely be a number of unapplied migration warnings.  No problem.  Jus
 ```
 python manage.py migrate
 ```
+
+#### Create an app
+
+In the project folder, type in the following.
+```
+python manage.py startapp nameofapp
+```
