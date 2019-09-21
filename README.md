@@ -50,3 +50,8 @@ In the folder that contains manage.py type.
 ```
 python manage.py runserver
 ```
+
+There will likely be a number of unapplied migration warnings.  No problem.  Just stop the server and run...
+```
+python manage.py migrate
+```
