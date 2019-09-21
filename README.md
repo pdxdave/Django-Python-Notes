@@ -58,13 +58,13 @@ python manage.py migrate
 
 #### Create an app
 
-In the project folder, type in the following.
+In the project folder, type in the following.  This example app will be called "polls"
 ```
 python manage.py startapp nameofapp
 ```
 This creates the following structure inside your project folder.    
 ```
-nameofapp > #folder
+polls > #folder
   migrations > # a folder
   __init__.py
   admin.py
@@ -104,3 +104,12 @@ INSTALLED_APPS = [
     'polls.apps.PollsConfig'
     'django.contrib.admin',
 ]
+```
+This refers to the apps.py file in the polls folder
+
+#### Create migrations
+
+On the command line.  Type the following.
+```
+python manage.py makemigrations polls
+```
