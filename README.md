@@ -129,5 +129,25 @@ python manage.py migrate
 
 #### This is a little extra.  It is not absolutely necessary to your project
 
-This how to manipulate the data from within the shell
+This how to manipulate the data from within the shell.  Also, since our DB uses time, we need to install 
 
+```
+python manage.py shell
+```
+
+Now import the question and choice models we made in the DB. Refer to "Create the database" above if you forgot.
+```
+from polls.modles import Question,Choice
+```
+Now we can make queries.  For instance, with the quesiton model...
+```
+Question.objects.all()  // Enter
+```
+In this project we need to import the timezone module since we're using a publication date
+```
+fron django.utils import timezone
+```
+Next, we'll setup the questions
+```
+q = Question(question_text='What is your favorite cookie?', pub_date=)
+```
