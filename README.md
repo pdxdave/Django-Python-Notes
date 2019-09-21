@@ -62,3 +62,14 @@ In the project folder, type in the following.
 ```
 python manage.py startapp nameofapp
 ```
+This creates the following structure inside your project folder.    
+```
+nameofapp > #folder
+  migrations > # a folder
+  __init__.py
+  admin.py
+  apps.py
+  models.py  # where we create the db model
+  tests.py
+  views.py
+```
