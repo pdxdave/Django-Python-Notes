@@ -33,7 +33,7 @@ pipenv install django
 
 ### Start the project
 
-At the terminal type.    
+At the terminal type.  In this example, the name of the project is called 'pollster'. I just have nameofproject to show where it goes.  The name of the app will be called 'polls'.
 ```
 django-admin startproject nameofproject
 ```
@@ -109,7 +109,16 @@ This refers to the apps.py file in the polls folder
 
 #### Create migrations
 
-On the command line.  Type the following.
+Make sure you are in the 'pollster' or project folder. On the command line type the following.
 ```
 python manage.py makemigrations polls
 ```
+If done correclty, you'll get something like this in the terminal, and a migrations folder in the folder tree
+```
+Migrations for 'polls':
+  polls/migrations/0001_initial.py
+    - Create model Question
+    - Create model Choice
+(_Python_practice) bash-3.2$ 
+```
+
