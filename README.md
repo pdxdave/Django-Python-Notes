@@ -175,6 +175,49 @@ This will filter just the question. The pk is for primary key
 ```
 Question.objects.get(pk=1)
 ```
+Now we'll set the question to the variable 'q'
+```
+q = Question.objects.get(pk=1)
+```
+We can type in the following and see that we have no choices for that question
+```
+q.choice_set.all()
+```
+Now we'll create some choices.  You see the choice appear after entering this command line
+```
+q.choice_set.create(choice_text="chocolate chip", votes=0)
+```
+Now we can do it again by adding another choice
+```
+q.choice_set.create(choice_text="oatmeal", votes=0)
+```
+And lastely add
+```
+q.choice_set.create(choice_text="sugar", votes=0)
+```
+Now check all the choices
+```
+q.choice_set.all()
+```
+Now you can quit out of this by typing
+```
+quit()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
