@@ -6,10 +6,14 @@ Make sure Pip is up todate. This is for Mac.
 sudo -H pip install --upgrade pip
 ```
 
-Setup the pip virtual environment.  Do this locally to the file instead of globally.  It's done this way.
-
+Setup the pip environment.  Do this locally to the file instead of globally.  It's done this way.
 ```
-pipenv install
+pip install pipenv
+```
+
+Next to create the virtual environment
+```
+pipenv shell
 ```
 
 When done you'll see something like...    
