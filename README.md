@@ -39,7 +39,7 @@ django-admin startproject nameofproject
 ```
 
 This will create a nameofproject folder.    
-* Django concepts to remember.  In Django you have a project, think of this as the entire site, then you have apps.  You might have a calculator app, a calendar app, a survey app all within the project.    
+* Django concepts to remember.  In Django you have a project. Think of this as the entire site. Then you have apps.  You might have a calculator app, a calendar app, a survey app all within the project.    
 * manage.py is the command line tool for Django. It's used to run the server, create migrations, etc.    
 * settings.py is where we keep our secret key, base directory, define the database, middleware, etc.  Sqlite3 is the default database for Django.
 * urls.py file is the routes file. Each app has its own urls.py file. 
