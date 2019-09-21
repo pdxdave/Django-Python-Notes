@@ -207,8 +207,16 @@ quit()
 
 #### Setup the Admin area
 
+You should be in the project folder.  In this example, pollster.  Now we're going to setup the admin.  After entering the command line code below, you will be asked to create an admin name, email address, and a password.  In this example I will use: admin=admin, email=webdevdave@hotmail.com, password=123taco
+```
+python manage.py createsuperuser
+```
 
-
+Run the server.  It's possible that you're server is already running, but do this anyway
+```
+python manage.py runserver
+```
+Now would should be able to go to localhost:8000/admin and see the Django admin login.  Login and you'll see the site administration page.
 
 
 
