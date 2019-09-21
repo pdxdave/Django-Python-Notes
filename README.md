@@ -30,3 +30,10 @@ Now we can install Django.  The Django package will show up in our Pipfile
 ```
 pipenv install django
 ```
+
+### Start the project
+
+At the terminal type.    
+```
+django-admin startproject nameofproject
+```
