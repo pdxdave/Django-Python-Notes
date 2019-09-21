@@ -47,6 +47,6 @@ This will create a nameofproject folder.
 #### Run the server
 
 In the folder that contains manage.py type.
-````
+```
 python manage.py runserver
 ```
