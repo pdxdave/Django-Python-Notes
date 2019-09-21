@@ -25,3 +25,8 @@ Launching subshell in virtual environment…
 bash-3.2$  . /Users/davidmartinson/.local/share/virtualenvs/_Python_practice-PzhcMqkK/bin/activate
 (_Python_practice) bash-3.2$ 
 ```
+
+Now we can install Django.  The Django package will show up in our Pipfile 
+```
+pipenv install django
+```
