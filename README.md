@@ -122,3 +122,12 @@ Migrations for 'polls':
 (_Python_practice) bash-3.2$ 
 ```
 
+To run the migrations we need to put the tables in the database. At the terminal run.
+```
+python manage.py migrate
+```
+
+#### This is a little extra.  It is not absolutely necessary to your project
+
+This how to manipulate the data from within the shell
+
