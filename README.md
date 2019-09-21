@@ -37,3 +37,6 @@ At the terminal type.
 ```
 django-admin startproject nameofproject
 ```
+
+This will create a nameofproject folder.    
+* Django concepts to remember.  In Django you have a project, think of this as the entire site, then you have apps.  You might have a calculator app, a calendar app, a survey app all within the project.    
