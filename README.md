@@ -97,3 +97,10 @@ class Choice(models.Model):
     def __str__(self):
         return self.choice_text
 ```
+
+In the settings.py file we need to add the app to the INSTALLED_APP array.  In this example, it's the top line.
+```
+INSTALLED_APPS = [
+    'polls.apps.PollsConfig'
+    'django.contrib.admin',
+]
