@@ -250,6 +250,14 @@ admin.site.register(Question, QuestionAdmin)
 
 ```
 
+Now we can change the site header and title.  In the same admin.py file
+```
+admin.site.site_header = "Pollster Admin"
+admin.site.site_title = "Pollster Admin Area"
+admin.site.index_title = "Welcome to the Pollster admin area"
+```
+
+#### Front facing website
 
 
 
