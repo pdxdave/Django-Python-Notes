@@ -151,3 +151,40 @@ Next, we'll setup the questions
 ```
 q = Question(question_text='What is your favorite cookie?', pub_date=timezone.now())
 ```
+Now we have to save the question to the database
+```
+q.save()
+```
+Next, test that it is in the database
+```
+q.id
+```
+The result should be 1.  Next, type in
+```
+q.question_text
+```
+It should show the question.  While we're still in the shell type
+```
+Question.objects.all)
+```
+We can filter questions, too.  This will return it as an array
+```
+Question.objects.filter(id=1)
+```
+This will filter just the question. The pk is for primary key
+```
+Question.objects.get(pk=1)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
