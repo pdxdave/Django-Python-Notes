@@ -129,7 +129,7 @@ python manage.py migrate
 
 #### This is a little extra.  It is not absolutely necessary to your project
 
-This how to manipulate the data from within the shell.  Also, since our DB uses time, we need to install 
+This how to manipulate the data from within the shell.
 
 ```
 python manage.py shell
