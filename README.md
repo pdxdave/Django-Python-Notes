@@ -212,15 +212,43 @@ You should be in the project folder.  In this example, pollster.  Now we're goin
 python manage.py createsuperuser
 ```
 
-Run the server.  It's possible that you're server is already running, but do this anyway
+Run the server.  It's possible that youre server is already running, but do this anyway
 ```
 python manage.py runserver
 ```
-Now would should be able to go to localhost:8000/admin and see the Django admin login.  Login and you'll see the site administration page.
+Now we should be able to go to localhost:8000/admin and see the Django admin login.  Login and you'll see the site administration page.
 
+#### Create Admin functionality
 
+Go to the app page, in this case polls, then admin.py.  We're oing to import the models
+```
+from .models import Question, Choice
+```
+Now we register them in the same admin.py file
+```
+admin.site.register(Question)
+admin.site.register(Choice)
+```
+If you go to the Site administration page on the web, you should see the polls section
 
+OK, how it's currently setup we can click on the questions, but the choices are not tied to the questions in the admin page. The code below will tie them to the questions. This operation is called tabular in-line.  Make sure to comment out the admin.site.register(Question) and (Choice) from above.
+```
+class ChoiceInLine(admin.TabularInline):
+    model = Choice
+    extra = 3  # how many extra fields
 
+class QuestionAdmin(admin.ModelAdmin):
+    fieldsets = [(None, {'fields': ['question_text']}),
+                ('Date Information', {'fields': ['pub_date'], 'classes': 
+                ['collapse']}), ]
+    inlines = [ChoiceInLine]
+    
+
+# admin.site.register(Question)
+# admin.site.register(Choice)
+admin.site.register(Question, QuestionAdmin)
+
+```
 
 
 
