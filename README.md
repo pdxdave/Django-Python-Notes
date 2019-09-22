@@ -279,9 +279,22 @@ We can also create a namespace for links. This might be used for a details view 
 ```
 app_name = 'polls'
 urlpatterns = [
-  path('', views.index, name='index')
+  path('', views.index, name='index') # in this example, the ' ' is like saying '/polls'.  This is like a route
 ]
+```
 
+This needs to be brought into the main or the package urls.py.  In this example I've been calling it pollster.
+```
+from django.urls import path  # will add include here.  Needed if using another sets file
+from django.urls import include, path
+
+urlpatterns = [
+    path('polls/', include('polls.urls')), # anything that is in polls/ will include polls urls
+    path('admin/', admin.site.urls),
+]
+```
+
+##### creating a template folder
 
 
 
