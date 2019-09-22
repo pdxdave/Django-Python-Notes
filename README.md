@@ -296,6 +296,18 @@ urlpatterns = [
 
 ##### creating a template folder
 
+It's possible to have a bunch of template folders scattered throughout the app.  A global template folder might be better.  To do that a few things need to happen.  In this example, in the pollster folder, we'll create a templates folder.  In that will have a polls folder, and in that an index.html.  
+
+This can be confusing because there are TWO pollster folders.  The structure should look like this.
+```
+pollster >
+  polls >
+  pollster >
+  templates >
+     polls >
+       index.html
+```
+
 
 
 
