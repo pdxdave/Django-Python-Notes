@@ -259,8 +259,28 @@ admin.site.index_title = "Welcome to the Pollster admin area"
 
 #### Front facing website
 
+Go to views.py in the polls app folder.  We need to query the database and pass the data into the views.  To start this we need to import a few things.
+```
+from .models import Question, Choice
+```
 
+Next we have to create a view.  
+```
+def index(request):
+    return render(request, 'polls/index.html')
+```
 
+As mentioned at the beginning of this writeup, each app needs its own urls.py.  In the polls folder, or the app folder, create a urls.py.  In that file put in
+```
+from django.urls import path  # need the path to the urls
+from . import views  # import all the views
+```
+We can also create a namespace for links. This might be used for a details view or whatever
+```
+app_name = 'polls'
+urlpatterns = [
+  path('', views.index, name='index')
+]
 
 
 
