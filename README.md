@@ -212,7 +212,7 @@ You should be in the project folder.  In this example, pollster.  Now we're goin
 python manage.py createsuperuser
 ```
 
-Run the server.  It's possible that youre server is already running, but do this anyway
+Run the server.  It's possible that your server is already running, but do this anyway
 ```
 python manage.py runserver
 ```
@@ -220,7 +220,7 @@ Now we should be able to go to localhost:8000/admin and see the Django admin log
 
 #### Create Admin functionality
 
-Go to the app page, in this case polls, then admin.py.  We're oing to import the models
+Go to the app page, in this case polls, then admin.py.  We're going to import the models
 ```
 from .models import Question, Choice
 ```
